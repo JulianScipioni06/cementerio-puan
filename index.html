@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cementerio de Puan</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo-municipio.jpeg" alt="Logo Municipio de Puán" class="logo">
+        <h1>Cementerio de Puan</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="map-container">
+            <div class="search-box">
+                <input type="text" id="input-busqueda" placeholder="Buscar por nombre o DNI...">
+            </div>
+            <div class="content-wrapper">
+                <div id="mapa-cementerio"></div>
+                <div id="panel-resultados" class="panel-lateral">
+                    <div class="panel-header">
+                        <h3>Resultados</h3>
+                        <span id="contador-resultados">0 resultados</span>
+                    </div>
+                    <div id="lista-resultados" class="lista-resultados">
+                        <p class="mensaje-inicial">Escribe en el buscador para ver resultados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Municipio de Puan. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

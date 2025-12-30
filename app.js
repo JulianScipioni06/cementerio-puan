@@ -9,9 +9,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var capaMarcadores = L.layerGroup().addTo(map);
 
 //ENLACE DE GOOGLE SHEETS
-var urlExcel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQaAtms3ZLNDMm1jjHczkPpxC-NA6YyI1-9G0g1uFB6dJORhs7iyyrnGqkSmQ9QGHfNZk37gjmVdwTl/pub?gid=0&single=true&output=csv"; 
+//urlExcel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQaAtms3ZLNDMm1jjHczkPpxC-NA6YyI1-9G0g1uFB6dJORhs7iyyrnGqkSmQ9QGHfNZk37gjmVdwTl/pub?gid=0&single=true&output=csv"; 
 
-var datosGlobales = [];
+datosGlobales = [];
 
 // 2. FUNCIÓN MÁGICA: NORMALIZADOR ARGENTINO
 function normalizarCoordenada(valor) {

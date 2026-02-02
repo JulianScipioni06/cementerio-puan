@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cementerio de Puan</title>
+    <title>Mi Sitio con Mapa</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
@@ -14,34 +14,41 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="logo-municipio.jpeg" alt="Logo Municipio de Puán" class="logo">
+        <img src="logo.png" alt="Logo Municipio de Puán" class="logo">
         <h1>Cementerio de Puan</h1>
     </header>
 
     <!-- Main -->
     <main>
-        <div class="map-container">
-            <div class="search-box">
-                <input type="text" id="input-busqueda" placeholder="Buscar por nombre o DNI...">
-            </div>
-            <div class="content-wrapper">
-                <div id="mapa-cementerio"></div>
-                <div id="panel-resultados" class="panel-lateral">
-                    <div class="panel-header">
-                        <h3>Resultados</h3>
-                        <span id="contador-resultados">0 resultados</span>
-                    </div>
-                    <div id="lista-resultados" class="lista-resultados">
-                        <p class="mensaje-inicial">Escribe en el buscador para ver resultados</p>
-                    </div>
+        <div class="search-hero">
+            <div class="search-content">
+                <div class="icon-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
                 </div>
+                <h1>Cementerio de Puán</h1>
+                <p class="subtitle">Busque por nombre o DNI</p>
+                <div class="search-box-hero">
+                    <input type="text" id="input-busqueda" placeholder="Ingrese nombre o DNI..." autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <div class="resultados-section" id="resultados-section">
+            <div class="resultados-container">
+                <div class="resultados-header">
+                    <span id="contador-resultados"></span>
+                </div>
+                <div id="lista-resultados" class="lista-resultados"></div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Municipio de Puan. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Mi Sitio con Mapas. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Scripts -->

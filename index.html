@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio con Mapa</title>
+    <title>Cementerio de Puan</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
@@ -20,27 +20,28 @@
 
     <!-- Main -->
     <main>
-        <div class="search-section">
-            <h2>Búsqueda de Ubicaciones</h2>
-            <p class="subtitle">Ingrese el nombre de la persona</p>
-            <div class="search-box-main">
-                <input type="text" id="input-busqueda" placeholder="Buscar por nombre...">
+        <div class="map-container">
+            <div class="search-box">
+                <input type="text" id="input-busqueda" placeholder="Buscar por nombre o DNI...">
             </div>
-        </div>
-
-        <div class="resultados-section">
-            <div class="resultados-header">
-                <span id="contador-resultados">0 resultados</span>
-            </div>
-            <div id="lista-resultados" class="lista-resultados">
-                <p class="mensaje-inicial">Los resultados aparecerán aquí</p>
+            <div class="content-wrapper">
+                <div id="mapa-cementerio"></div>
+                <div id="panel-resultados" class="panel-lateral">
+                    <div class="panel-header">
+                        <h3>Resultados</h3>
+                        <span id="contador-resultados">0 resultados</span>
+                    </div>
+                    <div id="lista-resultados" class="lista-resultados">
+                        <p class="mensaje-inicial">Escribe en el buscador para ver resultados</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Municipio de Puan. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Municipio de Puan. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Scripts -->

@@ -25,7 +25,7 @@ header {
 .logo {
     height: 55px;
     width: auto;
-    filter: brightness(0) invert(1);
+    border-radius: 8px;
 }
 
 header h1 {
@@ -165,33 +165,42 @@ footer {
 }
 
 /* Responsive */
+/* --- RESPONSIVE (Móvil) --- */
 @media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
-    }
-
-    header h1 {
-        font-size: 18px;
-    }
-
-    .logo {
-        height: 40px;
-    }
-
-    main {
-        padding: 20px;
-    }
-
+    
+    /* 1. Ajuste del contenedor principal */
     .content-wrapper {
-        flex-direction: column;
+        flex-direction: column; /* Pone uno debajo del otro */
+        display: flex;
+        gap: 20px;
     }
 
+    /* 2. ARREGLO DEL MAPA (¡Aquí estaba el error!) */
+    #mapa-cementerio {
+        /* Importante: desactivar flex para que no se colapse a 0 */
+        flex: none; 
+        width: 100%;
+        height: 400px; /* Altura obligatoria */
+        order: 1; /* Asegura que el mapa aparezca PRIMERO */
+        display: block; /* Asegura que se comporte como bloque */
+    }
+
+    /* 3. Ajuste del panel de resultados */
     .panel-lateral {
         width: 100%;
-        max-height: 300px;
+        max-height: 400px; /* Un poco más alto para ver mejor */
+        order: 2; /* Aparece DESPUÉS del mapa */
+        margin-top: 10px;
     }
 
-    #mapa-cementerio {
-        height: 400px;
+    /* Ajustes visuales extra para celular */
+    main {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
     }
 }

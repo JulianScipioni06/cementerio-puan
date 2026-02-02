@@ -47,7 +47,6 @@ function mostrarResultados(lista) {
         div.className = 'resultado-item';
         div.innerHTML = `
             <h4>${persona.Nombre || 'Sin nombre'}</h4>
-            <p class="dni">DNI: ${persona.DNI || 'N/A'}</p>
             <div class="ubicacion">
                 <p><strong>Sector:</strong> ${persona.Sector || 'N/A'}</p>
                 <p><strong>Fila:</strong> ${persona.Fila || 'N/A'} | <strong>Nicho:</strong> ${persona.Nicho || 'N/A'}</p>
